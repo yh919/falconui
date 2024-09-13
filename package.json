@@ -1,5 +1,5 @@
 {
-  "name": "@falcon/ui",
+  "name": "@yh919/falcon-ui",
   "version": "0.0.0-development",
   "description": "UI Library for your upcoming projects",
   "main": "src/index.ts",
