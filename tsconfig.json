@@ -1,6 +1,23 @@
 {
   "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
-    "jsx": "preserve"
-  }
+    "jsx": "react", // Use "react" to properly transpile JSX
+    "declaration": true, // Generate type declaration files (.d.ts)
+    "emitDeclarationOnly": true, // Only emit .d.ts files
+    "outDir": "dist", // Output folder for compiled files
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "target": "ESNext",
+    "lib": ["dom", "esnext"],
+    "skipLibCheck": true,
+    "strict": true,
+    "isolatedModules": true,
+    "module": "esnext", // Use ESNext module system for library bundling
+    "noEmit": false, // Ensure files are emitted
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "tests"]
 }
