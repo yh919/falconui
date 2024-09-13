@@ -6,6 +6,12 @@
   "files": [
     "src/**/*"
   ],
+  "repository": {
+    "url": "https://github.com/yh919/falconui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yh919/falconui/issues"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
