@@ -10,13 +10,8 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-zinc-900 text-zinc-50 dark:text-zinc-900 dark:bg-zinc-50",
-        destructive:
-          "bg-red-500 text-zinc-50 dark:bg-red-900 dark:text-zinc-50",
         outline:
           "border border-zinc-300 bg-white dark:border-zinc-800 dark:bg-zinc-950 hover:dark:bg-zinc-800 hover:bg-zinc-200",
-        secondary:
-          "bg-zinc-200 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-50",
-        ghost: "hover:bg-zinc-200 dark:hover:bg-zinc-700",
         link: "text-zinc-900 underline-offset-4 hover:underline dark:text-zinc-50",
       },
       size: {
@@ -37,9 +32,6 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
-  rightIcon?: React.ReactNode;
-  leftIcon?: React.ReactNode;
-  hideIcon?: boolean;
 }
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
